@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>My Facebook Android App</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" type="text/css" href="reset-html5.css" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" rel="stylesheet" />
+		<link rel="stylesheet" href="css/lib/fontello.css" />
+		
+		<link rel="stylesheet" href="css/index.css" />
+		
+		<link rel="stylesheet" href="css/sidebar.css" />
+
+
+		
+		<!--[if lt IE 9]>
+			<script src="js/lib/html5shiv.js"></script>
+		<![endif]-->
+
+<script type="text/javascript">
+	$(window).scroll(function() {
+    if($(window).scrollTop() == $(document).height() - $(window).height()) {
+           // ajax call get data from server and append to the div
+           new_element.hide().appendTo('.your_div').fadeIn(); $(window).scrollTop($(window).scrollTop()-1);
+    }
+});
+</script>
+
+
+	</head>
+	<body>
+		
+
+<div class="wrapper jsc-sidebar-content jsc-sidebar-pulled">
+	<nav>
+		<a href="#" class="icon-menu link-menu jsc-sidebar-trigger"></a>
+	</nav>
+	<section class="main-content">
+
+
+			<div id="wrap">
+
+			<h2 align="center">HCV Newsfeed</h2>
+			<ul id="facebook_wall">
+			<script src="http://www.google.com/jsapi" type="text/javascript"></script> 
+			<script type="text/javascript">google.load("jquery", "1");</script> 
+			<script src="facebook_wall.plugin.js" type="text/javascript"></script> 
+			<script type="text/javascript">
+			(function($) {
+				$(document).ready(function(){
+					$('html').removeClass('no-js');
+					if ($.browser.safari || $.browser.webkit) {
+						$('body').addClass('webkit');
+					}
+
+					$('#facebook_wall').facebook_wall({
+						id: '224154191111868',
+						access_token: '193673707489176|55a9bc60f1b35074263ea95e45218fc3',
+						limit: 50
+					});
+				});
+			})(jQuery);
+			</script>
+
+	</section>
+
+<img src="images/loader-small.gif" style="display:block;margin:auto;"alt="">
+
+</div>
+<br>
+
+
+		<nav class="sidebar jsc-sidebar" id="jsi-nav" data-sidebar-options="">
+	<ul class="sidebar-list">
+		<li><a href="#" class="current" style="font-size:20px" >Our News</a></li>
+		<li><a href="https://www.facebook.com/hcvfighters">Find us on <b style="color:blue; font-size:20px;">Facebook</b></a></li>
+		<li><a href="https://www.facebook.com/DrOs96" style="font-size:18px"><b>About</b> Developer</a></li>
+		<li><a href="#" class="current" align="center" style="background: #e3e3e3 ; border-radius:20px ; color:red ; font-weight:bold ; font-size:20px" >Hope u Enjoy</a></li>
+	</ul>
+</nav>
+<br>
+
+
+		<script src="js/lib/jquery.min.js"></script>
+		
+		<script src="js/sidebar.js"></script>
+		
+		<script>
+			$('#jsi-nav').sidebar({
+				trigger: '.jsc-sidebar-trigger',
+				pullCb: function () { console.log('pull'); },
+				pushCb: function () { console.log('push'); }
+			});
+		</script>
+
+<script>
+    $(window).scroll(function () {
+        if ($(document).height() <= $(window).scrollTop() + $(window).height()) {
+            alert("End Of The Page");
+        }
+    });
+</script>
+
+	</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HCV Fighters</title>
+	<style type="text/css">
+	body {
+		width: 100%;
+		height: 100%;
+		margin: 0 0 0 0;
+		position: absolute;
+		}
+	.buttons{
+		width: 200px;
+	height: 200px;
+	
+
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	
+	margin: auto;
+	}
+
+	
+	.btn{
+		margin: 0 auto;
+		margin-top: 20px;
+		display: block;
+		text-align: center;
+
+		background: #34d934;
+  background-image: -webkit-linear-gradient(top, #34d934, #8bb82b);
+  background-image: -moz-linear-gradient(top, #34d934, #8bb82b);
+  background-image: -ms-linear-gradient(top, #34d934, #8bb82b);
+  background-image: -o-linear-gradient(top, #34d934, #8bb82b);
+  background-image: linear-gradient(to bottom, #34d934, #8bb82b);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+	}
+	.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+
+	#background {
+    width: 100%; 
+    height: 100%; 
+    position: fixed; 
+    left: 0px; 
+    top: 0px; 
+    z-index: -10; /* Ensure div tag stays behind content; -999 might work, too. */
+	}
+
+	.stretch {
+	    width:100%;
+	    height:100%;
+	}
+	#logo{
+		height: 200px;
+		width: 200px;
+		margin: 0 auto;
+		display: block;
+	}
+	#footer {
+    position: absolute;
+    border-radius: 25px;
+    left: -20px;
+    bottom: 15px;
+    width: 200px;
+    height: 50px;
+    background: rgba(255,255,255,.9);
+}
+#fb {
+	margin-left: 25px;
+	width: 50px;
+	height: 50px;
+}
+#twitter {
+	margin-left: 2px;
+	width: 50px;
+	height: 50px;
+}
+#youtube {
+	margin-left: 2px;
+	width: 50px;
+	height: 50px;
+}
+
+	</style>
+</head>
+<body>
+	<div id="background">
+    <img src="bg.gif" class="stretch" alt="" />
+	</div>
+
+
+	<div class="container">
+		<img id="logo" src="logo.png" alt="">
+		<div class="buttons">
+			<button onClick="location.href='qa.html'" class="btn">Q&A</button>
+			<button onClick="location.href='newsfeed.html'" class="btn">Our News</button>
+			<button class="btn">Ask us</button>
+		</div>
+		<div id="footer">
+			<img id="fb" src="fb.png" alt="">
+			<img id="twitter" src="fb.png" alt="">
+			<img id="youtube" src="fb.png" alt="">
+		</div>
+
+
+		
+	</div>
+	
+</body>
+</html>

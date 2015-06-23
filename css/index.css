@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  font-size: 20px;
+  font-family: "Source Sans Pro", helvetica, sans-serif;
+  font-weight: 200;
+  color: #6e6e6e; 
+min-width: 100%; font: 11px Arial, Helvetica, Verdana, sans-serif; line-height: 16px; color: #333; 
+  background: -webkit-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* W3C */
+        
+}
+
+a {
+  color: #515151;
+  text-decoration: none; }
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+h1 {
+  font-weight: 200; }
+
+ul {
+  list-style-type: none;
+  padding: 0; }
+
+
+
+
+::selection {
+  background-color: #e77878;
+  color: white; }
+
+.wrapper {
+  width: 100%;
+  box-sizing: border-box;
+  border-top: 2px solid #6c6c6c;
+  background-color: #fefefe; }
+
+.link-menu {
+  font-size: 2.2rem; }
+  .link-menu:hover {
+    color: #807d7d; }
+
+.main-content {
+
+background: -webkit-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* W3C */
+}
+
+.headline {
+  font-size: 3.6rem;
+  font-weight: 400; }
+
+.headline-main {
+  color: #3c3c3c; }
+
+.download {
+  padding-top: 40px; }
+
+.btn-download {
+  display: inline-block;
+  text-align: center;
+  padding: 6px;
+  background-color: #424242;
+  color: white;
+  border: 2px solid #6c6c6c;
+  font-size: 1.2rem; }
+  .btn-download:hover {
+    background-color: #6c6c6c;
+    color: #ececec;
+    border: 2px solid #424242; }
+
+.sidebar {
+  background-color: #312f2f; }
+  .sidebar li + li {
+    margin-top: 12px; }
+  .sidebar li a {
+    padding: 20px 10px;
+    display: block;
+    color: #e3e3e3; }
+    .sidebar li:first-child {
+    padding: 15px 10px;
+    display: block;
+    text-align: center;
+    color: red; }
+    .sidebar li a:hover {
+      background-color: silver; }
+  .sidebar li .current {
+    background-color: #6b6464; }
+
+
+h1 { font-size: 14px; line-height: 1.25em; margin: 0 0 16px 0; }
+h2 { font-size: 24px; font-style: normal; font-weight: 300; line-height: 1.25em; margin: 0 0 18px 0; color: white; font-weight: bold;  }
+h3, h4, h5, h6 { font-size: 11px; line-height: 1.25em; margin: 0; }
+p { margin-bottom: 16px; }
+a { color: white; text-decoration: none; }
+a:hover, a:focus { text-decoration: none; }
+strong, b { font-weight: bold; }
+em, i { font-style: italic; }
+sup, sub { font-size: 0.7em; vertical-align: baseline; position: relative; top: -0.4em; }
+sub { top: 0.4em; }
+
+#wrap { width: 80%; padding: 0px 0; margin: 0 auto; box-shadow: 50px 80px 5px rgba(0,0,0,0.1); }
+
+
+/* FACEBOOK - WALL */
+#facebook_wall { min-height: 200px; margin: 0 -40px; border-top: 2px solid #535353; border-bottom: 2px solid #535353; background: #FBFBFB; position: relative; }
+
+#facebook_wall .facebook-loading { width: 16px; height: 16px; margin: -8px 0 0 -8px; background: url('images/loader.png') no-repeat 50% 50%; position: absolute; top: 100px; left: 50%; }
+#facebook_wall .facebook-loading { -moz-animation: update-spinner 1s linear infinite; -webkit-animation: update-spinner 1s linear infinite; -ms-animation: update-spinner 1s linear infinite; animation: update-spinner 1s linear infinite; }
+
+#facebook_wall li { min-height: 52px; padding: 10px 10px 10px 72px; border-top: 1px solid #d4d4d4; display: none; position: relative; }
+#facebook_wall li:first-child { border-top: none; }
+
+#facebook_wall li .meta-header { }
+#facebook_wall li .meta-header .avatar { width: 60px; height: 60px; border-radius: 100%; position: absolute; top: 10px; left: 10px; }
+#facebook_wall li .meta-header .author { font-weight: bold; font-size: 14px; display: none; }
+#facebook_wall li .meta-header .date { display: none; }
+
+#facebook_wall li .message { color: #666; margin-bottom: 16px; font-size: 1.6em; text-align: center; color: black; font-family: 'lucida grande',tahoma,verdana,arial,sans-serif; text-shadow: 2px 2px #e3e3e3; text-decoration: underline;}
+#facebook_wall li .story { font-style: italic; color: #666; margin-bottom: 16px; color: #e3e3e3; }
+
+#facebook_wall li .media { color: #8a8a8a; margin: 10px 0; }
+#facebook_wall li .media.border-left { padding-left: 10px; border-left: 2px solid #a1a1a1; }
+#facebook_wall li .media .image { margin-right: 10px; float: left; position: relative; }
+#facebook_wall li.type-video .media .image:after { width: 44px; height: 44px; background: url('images/play.png') no-repeat 50% 50%; margin-top: -22px; margin-left: -22px; position: absolute; top: 50%; left: 50%; content: " "; pointer-events: none; }
+#facebook_wall li .media .image img { max-width: 100%; height: auto; padding: 2px; border: 1px solid #a1a1a1; display:block; margin:auto; }
+#facebook_wall li .media .media-meta { float: left; display: table; }
+#facebook_wall li .media .media-meta .name { font-weight: bold; }
+#facebook_wall li .media .media-meta .caption { font-style: italic; }
+#facebook_wall li .media .media-meta .description { }
+
+#facebook_wall li .meta-footer { font-size: 9px; line-height: 16px; color: #a1a1a1; clear: both; }
+#facebook_wall li .meta-footer .seperator { padding: 0 4px; }
+#facebook_wall li .meta-footer .date { padding-left: 15px;}
+#facebook_wall li .meta-footer .likes { }
+#facebook_wall li .meta-footer .comments { }
+#facebook_wall li .meta-footer .actions { }
+#facebook_wall li .meta-footer .actions .like { }
+#facebook_wall li .meta-footer .actions .comment { }
+
+#facebook_wall li ul.like-list { margin-top: 10px; display: none; }
+#facebook_wall li ul.like-list li.like { font-size: 11px; line-height: 16px; margin-top: 2px; border-top: none; background: #e0e0e0; display: block; }
+#facebook_wall li ul.like-list li.like:first-child { margin-top: 0; }
+#facebook_wall li ul.like-list li.like .meta-header .author { }
+
+#facebook_wall li ul.comment-list { margin-top: 10px; }
+#facebook_wall li ul.comment-list li.comment { font-size: 11px; line-height: 16px; margin-top: 2px; border-top: none; background: #e0e0e0; display: block; }
+#facebook_wall li ul.comment-list li.comment:first-child { margin-top: 0; }
+#facebook_wall li ul.comment-list li.comment .meta-header .author { }
+#facebook_wall li ul.comment-list li.comment .meta-header .date { }
+#facebook_wall li ul.comment-list li.comment .message { margin-bottom: 0; }
+#facebook_wall li ul.comment-list li.comment .date { font-size: 9px; line-height: 16px; color: #a1a1a1; }
+#facebook_wall li ul.comment-list li.read_more { min-height: 1px; font-size: 9px; line-height: 16px; color: #a1a1a1; padding: 0 10px 0 72px; margin: 5px 0 -5px 0; border-top: none; display: block; }
+#facebook_wall li ul.comment-list li.read_more a { color: #a1a1a1; }
